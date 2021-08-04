@@ -1,0 +1,55 @@
+
+#menu-tile {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+  }
+#menu-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+  
+#menu-tile {
+  background: url('../../assets/images/restraurant.jpg') no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+  
+  #menu-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+  #menu-tile p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+  
+  .right {
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+  }
+  
+  .container {
+      padding: 20px;
+  }

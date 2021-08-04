@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="container-fluid py-3 mt-3 bg-dark">
+        <div class="row text-center mt-5 ">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
+                <h1 class="mb-3 text-center text-white">
+                  Thank You for Your Order :)
+                </h1>   
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row  mt-5 ">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-1"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-10">
+                <div class="list-group mb-2">
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h5>Customer Name  </h5>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="form-control">{{custName}}</label>
+                        </div>
+                    </div>
+                                
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h5>Restaurant  </h5>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="form-control ">{{global.restName}}
+                                <small class="text-muted ml-3">{{global.location}}</small>
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="list-group-item d-flex justify-content-between"> -->
+                        <!-- <div>
+                            <h5 >Ordered Items</h5>
+                                    <div *ngFor="let item of cardItems">
+                                    <h6>{{item.ItemName}}</h6>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <small class="text-muted">Qty : x{{item.Quantity}}</small>
+                                            </div>
+                                            <div class="col-xs-6 ml-5">
+                                                <small class="text-muted">Price : {{item.Price}}Rs</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">Qty : x2</small> 
+                                </div>
+                        </div> -->
+                    <!-- </div> -->
+                    <!-- <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h5>Total Items  </h5>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="form-control">4</label>
+                        </div>
+                    </li> -->
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h5>Total Bill  </h5>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="form-control ">{{bill}} Rs</label>
+                        </div>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h5>Preparation Time  </h5>
+                        </div>
+                        <div class="col-sm-9">
+                            <label class="form-control ">40 minutes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

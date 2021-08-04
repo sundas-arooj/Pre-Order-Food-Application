@@ -1,0 +1,50 @@
+<!-- <ng2-slim-loading-bar color='red'></ng2-slim-loading-bar> --> 
+<section style="height: 100vh; 
+background-image: url('../assets/images/dark3.jpg'); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;" class="blur">
+
+  <div class="container-fluid" >
+    <div class="container py-5 mt-5">
+      <div class="row">
+          <div class="col-md-7 offset-2 text-center mt-5 py-3">
+              <h1 class=" display-4 mt-5 text-light">You Order We Prepare</h1>
+              <p class="lead text-light">Something short and leading about the collection below—its contents,the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+              </p>
+          </div>      
+      </div>
+    </div>
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-md-10 offset-2 text-center mt-5 mb-5 py-5">
+          <div class="input-group input-group-lg">
+            <input class="form-control mr-sm-2 ml-4 col-6 rounded" type="text"
+            placeholder="Search Restaurant" aria-label="Search" #SearchInput/>
+            <div class="input-group-append" id="button-addon4">
+              <button (click)="FindRest(SearchInput.value)" class="btn btn-outline-success my-2 my-sm-0 rounded" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  
+  <div class="container-fluid bg-light mt-5 mb-5">
+    <div class="container pt-5 pb-5" >
+        <div class="row" >
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mt-5" *ngFor="let rest of rests">
+                <div class="card" >                 
+                  <!-- src="../assets/images/pizza.jpg" -->
+                    <img style="height: 250px"  src='assets/images/{{rest.Image}}.jpg' class="img img-fluid">
+                    <div class="card-body">
+                        <p class=" card-text">{{rest.Name}}
+                        </p>
+                        <a [routerLink]="['/menupage',rest._id]" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+         </div> 
+     </div>
+  </div>

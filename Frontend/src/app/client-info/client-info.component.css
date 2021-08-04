@@ -1,0 +1,16 @@
+
+  .container {
+    max-width: 960px;
+    font-size: large;
+  }
+  
+  .lh-condensed { line-height: 1.25; }
+
+  #icon {
+    background: url('../../assets/images/logo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 72px;;
+    height:72px
+  
+  }

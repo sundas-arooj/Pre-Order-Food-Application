@@ -1,0 +1,40 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<div>
+  <div id="menu-tile">
+    <span>{{menu.Name}}</span>
+    <p>{{menu.Address}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{menu.Timings}}</p>
+</div> 
+</div>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div>
+          <h1 class="text-center">Our favourite Menu</h1>
+          <hr>  
+        </div>
+      </div>
+    </div>
+    <div class="row menu_inner mb-5" >
+      <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-12"  *ngFor="let m of menu.MenuItems">
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">{{m.Name}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Rs. {{m.Price}}</h6>    
+              <button (click)="AddToCart(m.Name,m.Price)" type="button" class="btn btn-danger  btn-rounded right">
+                  <i class="fa fa-plus-square fa-2x pt-1"
+                aria-hidden="true"></i></button>    
+          </div> 
+          </div> 
+          </div>
+      </div>
+    </div>   
+  <hr>
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark justify-content-center">
+      <button (click)="LoadComponent('cartpage')" routerLinkActive="active" type="button" class="btn btn-danger btn-lg">View Cart</button>
+  </nav>
+</section>
+

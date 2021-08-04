@@ -1,0 +1,36 @@
+<div class="container h-100 mt-5 pt-5 mb-5">
+  <div class="row">
+    <div class="col-xl-4 col-lg-4 col-md-3 col-sm-2 col-1"></div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10">
+    <h4 class="text-muted mb-3 text-center">
+      Your cart
+    </h4>
+    <ul class="list-group mb-2" *ngFor="let item of cardItems; let i = index">
+      <li class="list-group-item d-flex justify-content-between">
+        <div>
+          <h6 class="my-0">{{item.ItemName}}</h6>
+          <small class="text-muted">x{{item.Quantity}}</small>
+        </div>
+        <div>
+          <div class="text-muted ml-4">{{item.Price}} RS</div>
+          <button (click)="removeItem(i)" type="button" class="btn btn-rounded right">
+            <i class="material-icons">remove_circle_outline</i>
+          </button>
+          <button (click)="addItem(i)" type="button" class="btn btn-rounded right">
+            <i class="material-icons">add_circle_outline</i>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between">
+      <div>Total (PKR)</div>
+      <strong>{{ bill }}</strong>
+    </li>
+    </ul>
+    <div>
+      <button id="btn" (click)="LoadComponent('clientpage')" type="submit" class="btn btn-secondary float-right">Place Order</button>
+    </div>
+  </div>
+</div>
+</div>
