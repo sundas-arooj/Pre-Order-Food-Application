@@ -1,1 +1,1 @@
-This MEAN stack application helps people to order their food from the available restaurants before reaching the restaurant. Then this application will show them an estimated time so people will reach the resturant on time and in this way, this app saves their time.
+This MEAN stack application helps people to order their food from the available restaurants before reaching the restaurant. Then this application will show them an estimated time so people will reach the restaurant on time and in this way, this app saves their time.
